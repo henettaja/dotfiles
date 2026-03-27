@@ -42,3 +42,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # ~ java ~
 export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.13)
 # ~ java ~
+
+# ~ editor ~
+export EDITOR="micro"
+export VISUAL="micro"
+export GIT_EDITOR="micro"
+# ~ editor ~
