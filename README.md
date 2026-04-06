@@ -53,3 +53,17 @@ That script:
 - leaves the shell config usable even before `eza` is installed by falling back to `ls -lahG`
 
 Right now that tracked set covers shell-facing tools such as `starship`, `eza`, `micro`, `nvm`, and Java.
+
+## Setup
+
+Link the shell entrypoint with:
+
+```sh
+./scripts/link.sh
+```
+
+That script only manages one thing:
+
+- creates `~/.zshrc` as a symlink to `~/.dotfiles/zsh/.zshrc`
+- does nothing if that symlink is already correct
+- stops instead of overwriting an existing `~/.zshrc`
