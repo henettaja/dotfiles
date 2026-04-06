@@ -13,6 +13,6 @@ fi
 
 add_alias() {
     echo "Adding alias: $1"
-    echo "alias $1=$2" >> ~/.dotfiles/zsh/aliases.zshrc
+    echo "alias $1=\"$2\"" >> ~/.dotfiles/zsh/aliases.zshrc
     source ~/.dotfiles/zsh/aliases.zshrc
 }
