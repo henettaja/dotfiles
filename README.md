@@ -8,6 +8,8 @@ Small personal shell setup, currently centered around `zsh`.
 - `zsh/helpers.zshrc` Small helper functions and shell startup behavior.
 - `zsh/env.zshrc` Environment and toolchain setup.
 - `zsh/aliases.zshrc` Aliases and small conveniences.
+- `Brewfile` Homebrew-managed dependencies used by the shell setup.
+- `scripts/ensure-deps.sh` Installs and updates the tracked dependencies.
 - `secrets.env` Local-only secrets loaded by the shell startup flow.
 
 ## Startup flow
@@ -33,3 +35,21 @@ This keeps startup feeling fast without causing issues with agents, scripts or o
 
 - The repo assumes `~/.zshrc` sources `~/.dotfiles/zsh/.zshrc`.
 - `add_alias` appends new aliases to `zsh/aliases.zshrc`.
+
+## Dependencies
+
+Selected non-standard command-line dependencies are tracked in `Brewfile`.
+
+To install or update them:
+
+```sh
+./scripts/ensure-deps.sh
+```
+
+That script:
+
+- installs anything listed in `Brewfile` through Homebrew
+- updates or clones `zsh-defer` into `~/zsh-defer`
+- leaves the shell config usable even before `eza` is installed by falling back to `ls -lahG`
+
+Right now that tracked set covers shell-facing tools such as `starship`, `eza`, `micro`, `nvm`, and Java.
