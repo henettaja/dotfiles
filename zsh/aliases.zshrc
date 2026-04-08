@@ -10,6 +10,9 @@ fi
 lt() {
   eza --tree --level "${1:-2}" --icons
 }
+ltd() {
+  eza --tree --level "${1:-2}" --icons --only-dirs
+}
 alias gcam="git commit -a -m"
 alias gca="git commit -a"
 alias gcm="git commit -m"
