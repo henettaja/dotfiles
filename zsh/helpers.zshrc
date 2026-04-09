@@ -41,7 +41,3 @@ update_proxy() {
     proxy_off
   fi
 }
-
-precmd() {
-  update_proxy
-}

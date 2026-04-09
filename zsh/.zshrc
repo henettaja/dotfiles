@@ -10,6 +10,7 @@ eval "$(starship init zsh)"
 
 # ~ House magic ~
 zsh-defer source ~/.dotfiles/zsh/helpers.zshrc
+zsh-defer ~/.dotfiles/zsh/hooks.zshrc
 
 # ~ Atmosphere builds up behind the scenes ~
 zsh-defer source ~/.dotfiles/zsh/env.zshrc

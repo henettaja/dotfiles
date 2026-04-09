@@ -1,0 +1,3 @@
+precmd() {
+  update_proxy
+}
