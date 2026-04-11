@@ -13,11 +13,11 @@ zsh-defer source ~/.dotfiles/zsh/helpers.zshrc
 zsh-defer ~/.dotfiles/zsh/hooks.zshrc
 
 # ~ Atmosphere builds up behind the scenes ~
-zsh-defer source ~/.dotfiles/zsh/env.zshrc
 zsh-defer source ~/.dotfiles/secrets.env
 
 # ~ Party Tricks ~
 zsh-defer source ~/.dotfiles/zsh/aliases.zshrc
+zsh-defer source ~/.dotfiles/zsh/tooling.zshrc
 
 # ~ Backstage Gossip ~
 if [[ -n "$ZSH_DEBUGRC" ]]; then
