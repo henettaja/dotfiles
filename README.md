@@ -5,8 +5,9 @@ Small personal shell setup, currently centered around `zsh`.
 ## Layout
 
 - `zsh/.zshrc` Main entrypoint for the zsh config.
-- `zsh/helpers.zshrc` Small helper functions and shell startup behavior.
-- `zsh/env.zshrc` Environment and toolchain setup.
+- `zsh/utils.zshrc` Small helper functions and shell startup behavior.
+- `zsh/.zshenv` Environment exports and shell-wide variables.
+- `zsh/tooling.zshrc` Toolchain setup shell integrations.
 - `zsh/aliases.zshrc` Aliases and small conveniences.
 - `Brewfile` Homebrew-managed dependencies used by the shell setup.
 - `scripts/ensure-deps.sh` Installs and updates the tracked dependencies.
@@ -19,12 +20,13 @@ The shell startup is staged so the prompt appears instantly while the rest of th
 In `zsh/.zshrc`:
 
 1. Cue the ([starship](https://starship.rs/)) prompt.
-2. Helpers are loaded.
-3. Environment files and aliases are staged in the background in interactive shells with `ease`.
+2. Environment exports are loaded from `zsh/.zshenv`.
+3. Helpers are loaded.
+4. Secrets, tooling setup and aliases are staged in the background in interactive shells with `ease`.
 
 ## What `ease` does
 
-`ease` lives in `zsh/helpers.zshrc`.
+`ease` lives in `zsh/utils.zshrc`.
 
 - In interactive shells, it uses `zsh-defer` so non-essential setup loads behind the scenes after the prompt is visible.
 - In non-interactive shells, it falls back to synchronous `source` so agents can use the terminal.
