@@ -9,9 +9,6 @@ source ~/zsh-defer/zsh-defer.plugin.zsh
 # ~ Cue the prompt ~
 eval "$(starship init zsh)"
 
-# ~ Atmosphere builds up behind the scenes ~
-zsh-defer source ~/.dotfiles/secrets.env
-
 # ~ Party Tricks ~
 zsh-defer source ~/.dotfiles/zsh/aliases.zshrc
 zsh-defer source ~/.dotfiles/zsh/utils.zshrc
