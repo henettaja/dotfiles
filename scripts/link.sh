@@ -23,19 +23,19 @@ main() {
     current_target="$(readlink "$TARGET")"
 
     if [[ "$current_target" == "$SOURCE" ]]; then
-      log "~/.zshrc already points to $SOURCE"
+      log "$TARGET already points to $SOURCE"
       return
     fi
 
-    fail "~/.zshrc already points elsewhere: $current_target"
+    fail "$TARGET already points elsewhere: $current_target"
   fi
 
   if [[ -e "$TARGET" ]]; then
-    fail "~/.zshrc already exists and is not a symlink"
+    fail "$TARGET already exists and is not a symlink"
   fi
 
   ln -s "$SOURCE" "$TARGET"
-  log "Linked ~/.zshrc -> $SOURCE"
+  log "Linked $TARGET -> $SOURCE"
 }
 
 main "$@"
