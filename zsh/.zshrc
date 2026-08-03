@@ -10,6 +10,7 @@ source ~/zsh-defer/zsh-defer.plugin.zsh
 eval "$(starship init zsh)"
 
 # ~ Party Tricks ~
+zsh-defer source ~/.dotfiles/zsh/plugins.zshrc
 zsh-defer source ~/.dotfiles/zsh/aliases.zshrc
 zsh-defer source ~/.dotfiles/zsh/utils.zshrc
 zsh-defer source ~/.dotfiles/zsh/hooks.zshrc
