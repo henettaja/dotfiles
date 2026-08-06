@@ -51,11 +51,6 @@ proxy_on() {
 
   git config --global http.proxy "$PROXY"
   git config --global https.proxy "$PROXY"
-
-  if command -v npm >/dev/null 2>&1; then
-    command npm config set proxy "$PROXY"
-    command npm config set https-proxy "$PROXY"
-  fi
 }
 
 proxy_off() {

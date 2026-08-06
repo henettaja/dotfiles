@@ -1,6 +1,5 @@
 # ~ Party Tricks ~
 alias zsh_zprof="time ZSH_DEBUGRC=1 zsh -i -c exit"
-alias mvn="mvn -T 1C"
 if command -v eza >/dev/null 2>&1; then
   alias ll="eza -la --group-directories-first --icons --header"
   alias ls="eza -l --group-directories-first --icons --header"
