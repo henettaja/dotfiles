@@ -20,3 +20,6 @@ zsh-defer source ~/.dotfiles/zsh/tooling.zshrc
 if [[ -n "$ZSH_DEBUGRC" ]]; then
   zprof
 fi
+
+# mise
+eval "$(/Users/henri/.local/bin/mise activate zsh)"

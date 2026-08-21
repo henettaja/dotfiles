@@ -1,3 +1,3 @@
 precmd() {
-  update_proxy
+  #update_proxy
 }
