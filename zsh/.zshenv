@@ -1,3 +1,4 @@
+export XDG_CONFIG_HOME="$HOME/.config"
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
