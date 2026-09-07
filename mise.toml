@@ -14,6 +14,7 @@ git = "latest"
 "brew:font-fira-code" = "latest"
 "brew:eza" = "latest"
 "brew:micro" = "latest"
+"brew:starship" = "latest"
 "brew:mas" = "latest"
 "mas:803453959" = "latest"      # Slack
 "mas:6738274497" = "latest"     # Raycast AI companion
