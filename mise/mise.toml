@@ -1,0 +1,36 @@
+[bootstrap.mise_shell_activate]
+zprofile = "shims"
+zshrc = "activate"
+
+[tools]
+node = "latest"
+git = "latest"
+
+[bootstrap.packages]
+"brew-cask:gh" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:zen" = "latest"
+"brew-cask:raycast" = "latest"
+"brew:font-fira-code" = "latest"
+"brew:eza" = "latest"
+"brew:micro" = "latest"
+"brew:mas" = "latest"
+"mas:803453959" = "latest"      # Slack
+"mas:6738274497" = "latest"     # Raycast AI companion
+
+[bootstrap.macos.dock]
+autohide = true
+tilesize = 48
+magnification = true
+show_recents = false
+mru_spaces = false
+
+[bootstrap.macos.finder]
+show_all_files = true
+show_pathbar = true
+
+[bootstrap.hooks.post-defaults]
+run = "killall Dock || true"
+
+[tasks.bootstrap]
+run = "node --version"
