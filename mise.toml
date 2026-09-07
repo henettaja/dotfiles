@@ -30,6 +30,12 @@ mru_spaces = false
 show_all_files = true
 show_pathbar = true
 
+# What this does:
+# - Enables Touch ID for sudo
+# - Disables dock autohide delay
+# - Lowers dock auto-hide animation length
+# - Sets dock magnification to a reasonable size
+# - Restars the dock
 [bootstrap.hooks.post-defaults]
 run = """
 echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo_local > /dev/null
