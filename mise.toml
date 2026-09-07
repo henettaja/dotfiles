@@ -32,7 +32,7 @@ show_pathbar = true
 
 [bootstrap.hooks.post-defaults]
 run = """
-echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo > /dev/null
+echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo_local > /dev/null
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 defaults write com.apple.dock largesize -int 64
