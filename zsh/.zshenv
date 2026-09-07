@@ -1,5 +1,3 @@
-export NVM_DIR="$HOME/.nvm"
-
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
