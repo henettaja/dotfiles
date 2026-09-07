@@ -35,13 +35,17 @@ show_pathbar = true
 # - Disables dock autohide delay
 # - Lowers dock auto-hide animation length
 # - Sets dock magnification to a reasonable size
-# - Restars the dock
+# - Clones zsh-defer
+# - Restarts the dock
 [bootstrap.hooks.post-defaults]
 run = """
 echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo_local > /dev/null
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 defaults write com.apple.dock largesize -int 64
+if [ ! -d ~/zsh-defer ]; then
+  git clone https://github.com/romkatv/zsh-defer.git ~/zsh-defer
+fi
 killall Dock || true
 """
 
