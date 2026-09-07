@@ -9,8 +9,6 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.13)
-
 export EDITOR="micro"
 export VISUAL="micro"
 export GIT_EDITOR="micro"
