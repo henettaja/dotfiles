@@ -55,6 +55,7 @@ killall Dock || true
 "~/.zshrc" = { source = "~/.dotfiles/zsh/.zshrc", mode = "symlink" }
 "~/.zprofile" = { source = "~/.dotfiles/zsh/.zprofile", mode = "symlink" }
 "~/.zshenv" = { source = "~/.dotfiles/zsh/.zshenv", mode = "symlink" }
+"~/.config/ghostty/config.ghostty" = { source = "~/.dotfiles/ghostty/config.ghostty", mode = "symlink" }
 
 [tasks.bootstrap]
 run = "node --version"
