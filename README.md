@@ -1,6 +1,6 @@
 # Henri's dotfiles
 
-Small personal shell setup, currently centered around `zsh`.
+Small personal shell setup, currently centered around `zsh` and `mise`.
 
 ## Layout
 
