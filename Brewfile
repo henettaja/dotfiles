@@ -1,5 +1,0 @@
-brew "eza"
-brew "micro"
-brew "nvm"
-brew "openjdk@17"
-brew "starship"
