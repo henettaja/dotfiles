@@ -3,7 +3,7 @@ zprofile = "shims"
 zshrc = "activate"
 
 [tools]
-node = "latest"
+node = "lts"
 
 [bootstrap.packages]
 "brew-cask:ghostty" = "latest"
