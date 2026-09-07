@@ -4,13 +4,13 @@ zshrc = "activate"
 
 [tools]
 node = "latest"
-git = "latest"
 
 [bootstrap.packages]
 "brew-cask:ghostty" = "latest"
 "brew-cask:zen" = "latest"
 "brew-cask:raycast" = "latest"
 "brew-cask:font-fira-code" = "latest"
+"brew:git" = "latest"
 "brew:gh" = "latest"
 "brew:eza" = "latest"
 "brew:micro" = "latest"
