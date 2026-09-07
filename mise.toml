@@ -31,7 +31,14 @@ show_all_files = true
 show_pathbar = true
 
 [bootstrap.hooks.post-defaults]
-run = "killall Dock || true"
+run = """
+sudo touch /etc/pam.d/sudo
+echo "auth    sufficient    pam_tid.so" >> /etc/pam.d/sudo
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.1
+defaults write com.apple.dock largesize -int 64
+killall Dock || true
+"""
 
 [tasks.bootstrap]
 run = "node --version"
