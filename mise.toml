@@ -46,6 +46,7 @@ defaults write com.apple.dock largesize -int 64
 if [ ! -d ~/zsh-defer ]; then
   git clone https://github.com/romkatv/zsh-defer.git ~/zsh-defer
 fi
+mise use --global node@lts
 killall Dock || true
 """
 
