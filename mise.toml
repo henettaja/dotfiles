@@ -39,5 +39,10 @@ defaults write com.apple.dock largesize -int 64
 killall Dock || true
 """
 
+[dotfiles]
+"~/.zshrc" = { source = "~/.dotfiles/zsh/.zshrc", mode = "symlink" }
+"~/.zprofile" = { source = "~/.dotfiles/zsh/.zprofile", mode = "symlink" }
+"~/.zshenv" = { source = "~/.dotfiles/zsh/.zshenv", mode = "symlink" }
+
 [tasks.bootstrap]
 run = "node --version"
