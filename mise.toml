@@ -45,11 +45,13 @@ echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo_local 
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.5
 defaults write com.apple.dock largesize -int 64
+defaults write com.apple.WindowManager AutoHideDelay -int 0
 if [ ! -d ~/zsh-defer ]; then
   git clone https://github.com/romkatv/zsh-defer.git ~/zsh-defer
 fi
 mise use --global node@lts
 killall Dock || true
+killall WindowManager || true
 """
 
 [dotfiles]
