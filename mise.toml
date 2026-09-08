@@ -19,6 +19,7 @@ node = "lts"
 "mas:803453959" = "latest"      # Slack
 "mas:6738274497" = "latest"     # Raycast AI companion
 "mas:1452453066" = "latest"     # Hidden bar
+"mas:1502839586" = "latest"     # Hand Mirror
 
 [bootstrap.macos.dock]
 autohide = true
