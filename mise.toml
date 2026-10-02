@@ -4,6 +4,7 @@ zshrc = "activate"
 
 [tools]
 node = "lts"
+pnpm = "latest"
 
 [bootstrap.packages]
 "brew-cask:ghostty" = "latest"
